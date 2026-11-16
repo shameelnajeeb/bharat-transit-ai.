@@ -1,0 +1,27 @@
+{
+  "name": "bus-tracking-ai-agent",
+  "version": "1.0.0",
+  "description": "Bus Tracking AI Agent with live GTFS/GTFS-RT transit engine, grounding guardrails, and accessible chat UI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --loader ts-node/esm tests/transit-engine.test.ts",
+    "verify:phase1": "powershell.exe -ExecutionPolicy Bypass -File scripts/verify_phase1.ps1"
+  },
+  "keywords": [
+    "gtfs",
+    "gtfs-rt",
+    "transit",
+    "bus-tracking",
+    "ai-agent",
+    "accessibility"
+  ],
+  "author": "Transit Operator / AI Engineering",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
+
